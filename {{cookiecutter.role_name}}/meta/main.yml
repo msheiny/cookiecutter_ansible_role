@@ -18,7 +18,7 @@ galaxy_info:
   # - CC-BY
   license: license (GPLv2, CC-BY, etc)
 
-  min_ansible_version: {{ cookiecutter.ansible_verison }}
+  min_ansible_version: {{ cookiecutter.ansible_version }}
 
   # Optionally specify the branch Galaxy will use when accessing the GitHub
   # repo for this role. During role install, if no tags are available,

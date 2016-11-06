@@ -1,7 +1,9 @@
 galaxy_info:
-  author: {{ cookiecutter.name }}
-  description: your description
+  author: {{ cookiecutter.role_name }}
+  description: {{ cookiecutter.description }}
+{% if cookiecutter.company != "" %}
   company: {{ cookiecutter.company }}
+{% endif %}
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value

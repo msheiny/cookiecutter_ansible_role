@@ -18,7 +18,7 @@ vagrant:
 {% endif %}
 
   instances:
-    - name: {{ cookiecutter.name }}
+    - name: {{ cookiecutter.role_name }}
       interfaces:
         - network_name: private_network
           type: dhcp

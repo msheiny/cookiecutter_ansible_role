@@ -1,0 +1,28 @@
+---
+ansible:
+  verbose: vv
+  diff: yes
+  config_file: ansible.cfg
+
+vagrant:
+  platforms:
+    - name: jessie64
+      box: debian/jessie64
+
+  providers:
+    - name: {{ cookiecutter.provider }}
+      type: {{ cookiecutter.provider }}
+{% if cookiecutter.memory != 0 %}
+      options:
+        memory: {{ cookiecutter.memory }}
+{% endif %}
+
+  instances:
+    - name: {{ cookiecutter.name }}
+      interfaces:
+        - network_name: private_network
+          type: dhcp
+          auto_config: true
+      #raw_config_args:
+      #  - "vm.network 'forwarded_port', guest: 443, host: 4443"
+      #  - "vm.network 'forwarded_port', guest: 80, host: 8080"

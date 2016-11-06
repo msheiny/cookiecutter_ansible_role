@@ -1,0 +1,8 @@
+{
+    "role_name": "ansible-role",
+    "provider":"virtualbox",
+    "memory": "2048",
+    "platform_name": "jessie64",
+    "platform_box": "debian/jessie64",
+    "ansible_version": "2.1"
+}

@@ -1,2 +1,3 @@
-./roles
-./molecule
+roles
+.molecule
+.vagrant
